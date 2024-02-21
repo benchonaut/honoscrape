@@ -4,8 +4,20 @@ import {
 } from './json-response'
 import { linkType } from './link-type'
 import Scraper from './scraper'
-import { TidyURL } from 'tidy-url'
+//import { TidyURL } from 'tidy-url'
+import { TidyURL } "npm:tidy-url^1.10.1"
 import { scraperRules } from './scraper-rules'
+
+//    "": "^4.0.5",
+//    "html-entities": "^2.4.0",
+//    "isomorphic-dompurify": "^1.9.0",
+//    "tidy-url": "^1.10.1",
+//    "top-user-agents": "^1.0.66",
+//    "unique-random-array": "^3.0.0"
+//import express from "npm:express@4.18.2";
+
+//import file-extension from "npm:file-extension^4.0.5"
+//import html-entities from "npm:html-entities^2.4.0"
 
 addEventListener('fetch', (event: FetchEvent) => {
   event.respondWith(handleRequest(event.request))
