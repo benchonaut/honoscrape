@@ -5,7 +5,7 @@ import {
 import { linkType } from './link-type'
 import Scraper from './scraper'
 //import { TidyURL } from 'tidy-url'
-import { TidyURL } "npm:tidy-url^1.10.1"
+import { TidyURL } from "npm:tidy-url^1.10.1"
 import { scraperRules } from './scraper-rules'
 
 //    "": "^4.0.5",
