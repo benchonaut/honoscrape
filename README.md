@@ -4,8 +4,12 @@ A template of REST API app using [Hono](https://hono.dev/) framework
 
 written off the cloudflare meta worker from https://github.com/TheFoundation/cloudflare-worker-scraper
 
+
+
 ```
-deno run --allow-net index.ts
+deno add npm:html-entities;deno add npm:top-user-agents;deno add npm:unique-random-array
+
+deno run --allow-run --allow-net --allow-write --allow-read --allow-import index.ts
 ```
 
 This starts the server at http://localhost:8000/
