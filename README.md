@@ -1,10 +1,6 @@
-# Hono Deno REST API Template
-
-A template of REST API app using [Hono](https://hono.dev/) framework
+# Deno Page Metadata Scraper 
 
 written off the cloudflare meta worker from https://github.com/TheFoundation/cloudflare-worker-scraper
-
-
 
 ```
 deno add npm:html-entities;deno add npm:top-user-agents;deno add npm:unique-random-array
@@ -14,4 +10,5 @@ deno run --allow-run --allow-net --allow-write --allow-read --allow-import index
 
 This starts the server at http://localhost:8000/
 
-Try go to http://localhost:8000/api/Brachiosaurus or http://localhost:8000/api/
+use it like http://localhost:8000/?url=https://my.domain.lan/my-link
+
