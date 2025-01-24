@@ -1,4 +1,4 @@
-import { GetMetadataOptions } from './scraper'
+import { GetMetadataOptions } from './scraper.ts'
 
 /**
  * Scraper rules
