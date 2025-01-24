@@ -1,4 +1,4 @@
-import { TypeDictionary } from './type-checker'
+import { TypeDictionary } from './type-checker.ts'
 export const fileTypes: TypeDictionary = {
   jpg: 'image',
   jpeg: 'image',

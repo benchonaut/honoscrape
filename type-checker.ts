@@ -1,5 +1,5 @@
-import fileExtension from 'file-extension'
-import { types } from './types'
+import { fileExtension } from "https://deno.land/x/file_extension/mod.ts";
+import { types } from './types.ts'
 
 export type LinkType =
   | 'link'

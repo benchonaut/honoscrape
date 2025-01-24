@@ -1,12 +1,15 @@
 import {
   generateErrorJSONResponse,
   generateJSONResponse,
-} from './json-response'
-import { linkType } from './link-type'
-import Scraper from './scraper'
+} from './json-response.ts'
+import { linkType } from './link-type.ts'
+import Scraper from './scraper.ts'
 //import { TidyURL } from 'tidy-url'
-import { TidyURL } from "npm:tidy-url^1.10.1"
-import { scraperRules } from './scraper-rules'
+
+import { scraperRules } from './scraper-rules.ts'
+console.log("tid")
+//import { TidyURL } from "npm:tidy-url^1.10.1"
+import { TidyURL } from 'npm:tidy-url';
 
 //    "": "^4.0.5",
 //    "html-entities": "^2.4.0",
@@ -97,3 +100,17 @@ async function handleRequest(request: Request) {
 
   return generateJSONResponse(response)
 }
+
+Deno.serve( async (req: Request) => {
+  //const { pathname } = new URL(req.url);
+  //// strip the leading slash
+  //const username = pathname.substring(1);
+  //const resp = await fetch(`https://api.github.com/users/${username}`);
+  //const user = await resp.json();
+  return handleRequest(req)
+  //return new Response(JSON.stringify(await something(req)), {
+  //  headers: {
+  //    "content-type": "application/json",
+  //  },
+  //});
+});

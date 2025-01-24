@@ -1,8 +1,11 @@
 import { decode } from 'html-entities'
-import { ScrapeResponse } from './worker'
-import { randomUserAgent } from './randomUserAgent'
-import { FollowShortUrlResponse, followShortUrl } from './follow-short-url'
-import { generateErrorJSONResponse } from './json-response'
+import { ScrapeResponse } from './index.ts'
+import { randomUserAgent } from './randomUserAgent.ts'
+import { FollowShortUrlResponse, followShortUrl } from './follow-short-url.ts'
+import { generateErrorJSONResponse } from './json-response.ts'
+import { 
+  HTMLRewriter 
+} from 'https://ghuc.cc/worker-tools/html-rewriter/index.ts'
 
 const cleanText = (string: string) => decode(string.trim(), { level: 'html5' })
 

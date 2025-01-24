@@ -1,4 +1,4 @@
-import { getErrorMessage } from './get-error-message'
+import { getErrorMessage } from './get-error-message.ts'
 
 const generateJSONResponse = (obj: any) => {
   return new Response(JSON.stringify(obj), {
